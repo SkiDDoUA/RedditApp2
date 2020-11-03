@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameLabel.sizeToFit()
+        titleLabel.sizeToFit()
         
         func getPost(subreddit: String, limit: String) {
             Repository.getPost(subreddit: subreddit, limit: limit, finished: { (success) -> Void in

@@ -22,10 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3kk-GT-jhd">
-                                        <rect key="frame" x="0.0" y="87.333333333333314" width="390" height="196"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="196" id="5at-xn-Vr1"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="82.000000000000014" width="390" height="201.33333333333337"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="k83-W7-nZK">
                                         <rect key="frame" x="8" y="7.9999999999999982" width="212.66666666666666" height="20.333333333333329"/>
@@ -104,7 +101,7 @@
                                         <color key="highlightedColor" systemColor="systemGray6Color"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adsdssdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdddsdsdsd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mti-tA-Qju">
-                                        <rect key="frame" x="8" y="29" width="347" height="47"/>
+                                        <rect key="frame" x="8" y="29.000000000000004" width="347" height="45.333333333333343"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                         <color key="textColor" systemColor="systemGray6Color"/>
                                         <color key="highlightedColor" systemColor="systemGray6Color"/>
@@ -126,6 +123,7 @@
                                 <color key="backgroundColor" name="CustomBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="uQ5-y6-wHo" firstAttribute="centerY" secondItem="e5D-aI-6uU" secondAttribute="centerY" constant="-1" id="1It-VO-ter"/>
+                                    <constraint firstItem="3kk-GT-jhd" firstAttribute="top" secondItem="mti-tA-Qju" secondAttribute="bottom" constant="7.6666666666666572" id="1co-R6-L4i"/>
                                     <constraint firstAttribute="trailing" secondItem="3kk-GT-jhd" secondAttribute="trailing" id="2HO-Mv-o9i"/>
                                     <constraint firstItem="mti-tA-Qju" firstAttribute="leading" secondItem="k83-W7-nZK" secondAttribute="leading" id="4ge-5J-PgD"/>
                                     <constraint firstItem="mti-tA-Qju" firstAttribute="leading" secondItem="MpY-UZ-bF2" secondAttribute="leading" constant="8" id="6VQ-Dm-JnJ"/>
@@ -142,7 +140,7 @@
                                     <constraint firstItem="1ry-qP-DjS" firstAttribute="top" secondItem="3kk-GT-jhd" secondAttribute="bottom" constant="7" id="TyF-th-TzH"/>
                                     <constraint firstItem="e5D-aI-6uU" firstAttribute="bottom" secondItem="MpY-UZ-bF2" secondAttribute="bottomMargin" constant="1" id="W5q-55-sd9"/>
                                     <constraint firstItem="gXR-6D-wG4" firstAttribute="top" secondItem="3kk-GT-jhd" secondAttribute="bottom" constant="4" id="X40-bG-kH9"/>
-                                    <constraint firstItem="3kk-GT-jhd" firstAttribute="top" secondItem="mti-tA-Qju" secondAttribute="bottom" constant="11.333333333333314" id="ZvJ-wJ-9Q3"/>
+                                    <constraint firstItem="3kk-GT-jhd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="mti-tA-Qju" secondAttribute="bottom" constant="7.6666666666666572" id="ZvJ-wJ-9Q3"/>
                                     <constraint firstItem="gKk-sN-Y3o" firstAttribute="top" secondItem="3kk-GT-jhd" secondAttribute="bottom" constant="9.3333333333334849" id="a8Z-VW-AiT"/>
                                     <constraint firstItem="k83-W7-nZK" firstAttribute="top" secondItem="MpY-UZ-bF2" secondAttribute="topMargin" id="h1M-Rc-TiR"/>
                                     <constraint firstItem="Uxh-1m-n3M" firstAttribute="top" secondItem="k83-W7-nZK" secondAttribute="top" id="ilE-sa-fcI"/>

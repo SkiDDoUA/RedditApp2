@@ -16,7 +16,6 @@
 		3AD5555A2550C683007F212D /* HTTPRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD555592550C683007F212D /* HTTPRequester.swift */; };
 		3AD555622550C6E8007F212D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD555612550C6E8007F212D /* Service.swift */; };
 		3AD5556C2550C735007F212D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5556B2550C735007F212D /* Repository.swift */; };
-		3AD555712550C758007F212D /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD555702550C758007F212D /* UseCase.swift */; };
 		3AD555772550CA82007F212D /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD555762550CA82007F212D /* PersistanceManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +50,6 @@
 		3AD555592550C683007F212D /* HTTPRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequester.swift; sourceTree = "<group>"; };
 		3AD555612550C6E8007F212D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		3AD5556B2550C735007F212D /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		3AD555702550C758007F212D /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		3AD555762550CA82007F212D /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,7 +132,6 @@
 		3AD555582550C662007F212D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				3AD555702550C758007F212D /* UseCase.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -278,7 +275,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AD5556C2550C735007F212D /* Repository.swift in Sources */,
-				3AD555712550C758007F212D /* UseCase.swift in Sources */,
 				3A065C8B254AFDA200ABEE4A /* ViewController.swift in Sources */,
 				3AD555772550CA82007F212D /* PersistanceManager.swift in Sources */,
 				3A065C87254AFDA200ABEE4A /* AppDelegate.swift in Sources */,
