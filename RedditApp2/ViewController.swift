@@ -3,6 +3,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var postView: UIView!
+    @IBOutlet var mainViewController: UIView!
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -11,12 +12,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var commentsLabel: UILabel!
-    
+
     @IBOutlet weak var saveButton: UIButton!
     
     var saved:Bool = false
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         usernameLabel.sizeToFit()
         
         func getPost(subreddit: String, limit: String) {
@@ -31,7 +33,6 @@ class ViewController: UIViewController {
             });
         };
 
-        
         func loadPost(responseJSON: RedditPost) {
             _ = "$ \(responseJSON.data.children.count) Posts:";
             for (_, post) in responseJSON.data.children.enumerated() {
@@ -63,11 +64,7 @@ class ViewController: UIViewController {
                 }
             }
         getPost(subreddit: "ios", limit: "1")
-        
-        super.viewDidLoad()
     }
-    
-   
     
     @IBAction func saveButtonAction(_ sender: UIButton) {
         saved = !saved
