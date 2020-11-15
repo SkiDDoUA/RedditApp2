@@ -64,7 +64,7 @@ class ViewController: UIViewController {
                     }
                 }
             }
-        getPost(subreddit: "ios", limit: "1")
+        getPost(subreddit: "ios", limit: "10")
     }
     
     @IBAction func saveButtonAction(_ sender: UIButton) {

@@ -1,8 +1,6 @@
 import Foundation
 
-class Repository {
-    //handle and decode data for usecase
-    
+class Repository {    
     static func decodePost(responseData: Data) -> RedditPost? {
         let jsonDecoder = JSONDecoder();
         do {
@@ -22,5 +20,17 @@ class Repository {
                 print("success error")
             }
         })
+    }
+    
+    static func loadJSON(loadJSONData: Data) -> AllPosts? {
+       let decoder = JSONDecoder()
+       guard
+            let url = Bundle.main.url(forResource: "Posts", withExtension: "json"),
+            let data = try? Data(contentsOf: url),
+            let post = try? decoder.decode(AllPosts.self, from: data)
+       else {
+            return nil
+       }
+       return post
     }
 }

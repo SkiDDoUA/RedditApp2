@@ -1,29 +1,29 @@
 import Foundation
 
-struct RedditPost: Decodable {
-    var data: DataStruct
-        
-    struct DataStruct: Decodable {
-        var children: [ItemStruct]
-        var after: String?
-        var before: String?
-        
-        struct ItemStruct: Decodable {
-            var data: ItemDataStruct
-        
-            struct ItemDataStruct: Decodable {
-                var author: String
-                var domain: String
-                var created_utc: Double
-                var title: String
-                var url: String
-                var ups: Int
-                var downs: Int
-                var num_comments: Int
-            }
-        }
-    }
-}
+//struct RedditPost: Decodable {
+//    var data: DataStruct
+//        
+//    struct DataStruct: Decodable {
+//        var children: [ItemStruct]
+//        var after: String?
+//        var before: String?
+//        
+//        struct ItemStruct: Decodable {
+//            var data: ItemDataStruct
+//        
+//            struct ItemDataStruct: Decodable {
+//                var author: String
+//                var domain: String
+//                var created_utc: Double
+//                var title: String
+//                var url: String
+//                var ups: Int
+//                var downs: Int
+//                var num_comments: Int
+//            }
+//        }
+//    }
+//}
 
 class HTTPRequester {
     static let sharedInstance = HTTPRequester()
