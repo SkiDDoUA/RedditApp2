@@ -21,7 +21,7 @@ class Presentation {
         Repository.getPost(subreddit: subreddit, limit: limit, finished: {(success) -> Void in
             if success {
                 if let result = Repository.decodePost(responseData: PersistenceManager.shared.cachedResponse) {
-                    savePostsToIphone(responseJSON: result);
+                    savePostsToIphone(responseJSON: [result])
                 }
             } else {
                 print("usecase error");
@@ -29,26 +29,12 @@ class Presentation {
         });
     };
     
-    static func savePostsToIphone(responseJSON: RedditPost) {
-        var postJSON = [[String : [String : String]]]()
-
-        for (index, post) in responseJSON.data.children.enumerated() {
-            let exampleDate = NSDate(timeIntervalSince1970: post.data.created_utc)
-            let formatter = RelativeDateTimeFormatter()
-            formatter.unitsStyle = .full
-            let timePassed = formatter.localizedString(for: exampleDate as Date, relativeTo: Date())
-
-            postJSON.append(contentsOf: [["post \(index + 1)": ["username": "\(post.data.author)",
-                                                    "time": "\(timePassed)",
-                                                    "domain": "\(post.data.domain)",
-                                                    "title": "\(post.data.title)",
-                                                    "rating": "\(post.data.ups - post.data.downs)",
-                                                    "comments": "\(post.data.num_comments)",
-                                                    "image": "\(post.data.url)",
-                                                    "isChecked": "False"]]])
+    static func savePostsToIphone(responseJSON: [RedditPost]) {
+        do {
+            try Repository.savePost(JSONToSave: responseJSON)
+        } catch {
+            print("SEVERE: Failed to encode and save posts with error: \(error)")
         }
-        
-        Repository.savePost(JSONToSave: postJSON)
 
 //        let fileUrl = URL.documents.appendingPathComponent("Posts.json")
 //        do {

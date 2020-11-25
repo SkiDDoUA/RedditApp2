@@ -11,13 +11,12 @@ extension URL {
 class Repository {
     
     static func decodePost(responseData: Data) -> RedditPost? {
-        let jsonDecoder = JSONDecoder();
         do {
-            let parsedJSON = try jsonDecoder.decode(RedditPost.self, from: responseData);
-            return parsedJSON;
+            let parsedJSON = try JSONDecoder().decode(RedditPost.self, from: responseData)
+            return parsedJSON
         } catch {
-            print(error);
-            return nil;
+            print(error)
+            return nil
         }
     }
     
@@ -31,16 +30,10 @@ class Repository {
         })
     }
     
-    static func savePost(JSONToSave: [[String : [String : String]]]) {
+    static func savePost(JSONToSave: [RedditPost]) throws {
         let fileUrl = URL.documents.appendingPathComponent("Posts1.json")
-        do {
-            if let jsonData = try JSONSerialization.data(withJSONObject: JSONToSave, options: .init(rawValue: 0)) as? Data {
-                try jsonData.write(to: fileUrl, options: [])
-                print("JSON saved")
-            }
-        } catch let error {
-            print("json saving to directory error: \(error)")
-        }
+        let jsonData = try JSONEncoder().encode(JSONToSave)
+        try jsonData.write(to: fileUrl, options: [])
     }
     
 //    static let bundleJson = Bundle.main.url(forResource: "Posts88", withExtension: "json" )

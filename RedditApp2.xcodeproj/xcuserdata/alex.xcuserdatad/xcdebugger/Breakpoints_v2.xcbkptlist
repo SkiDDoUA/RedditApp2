@@ -20,5 +20,149 @@
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E73ED374-81B8-49D6-B9A2-C6122A0534D5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RedditApp2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getPost(subreddit:limit:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22AE3D27-C239-47F6-8E9E-1489D7EADC5D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RedditApp2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getPost(subreddit:limit:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68E9A544-B8EE-46E8-B1AE-BEF665DB7660"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RedditApp2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getPost(subreddit:limit:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "68E9A544-B8EE-46E8-B1AE-BEF665DB7660 - 7e0b031d6a231011"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "getPost #1 (subreddit: Swift.String, limit: Swift.String) -&gt; () in RedditApp2.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "RedditApp2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Downloads/RedditApp2/RedditApp2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  uuid = "68E9A544-B8EE-46E8-B1AE-BEF665DB7660 - 127d2b49a3ff77fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in getPost #1 (subreddit: Swift.String, limit: Swift.String) -&gt; () in RedditApp2.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "RedditApp2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Downloads/RedditApp2/RedditApp2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "122">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CED0577-6FE8-4872-B97C-0614060C190D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RedditApp2/PostTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98FDDA05-094C-4F26-B6AB-69E62340CECF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Presentation/Presentation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getPost(subreddit:limit:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "98FDDA05-094C-4F26-B6AB-69E62340CECF - 578a9835a51fea0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static RedditApp2.Presentation.getPost(subreddit: Swift.String, limit: Swift.String) -&gt; ()"
+                  moduleName = "RedditApp2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Downloads/RedditApp2/Presentation/Presentation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  uuid = "98FDDA05-094C-4F26-B6AB-69E62340CECF - 71d3ce703dbe4250"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in static RedditApp2.Presentation.getPost(subreddit: Swift.String, limit: Swift.String) -&gt; ()"
+                  moduleName = "RedditApp2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Downloads/RedditApp2/Presentation/Presentation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "122">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
