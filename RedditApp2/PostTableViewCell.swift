@@ -19,7 +19,7 @@ class PostTableViewCell: UITableViewCell {
         }
     }
 
-    func configure(for post: AllPosts.FullPost.PostStruct) {
+    func configure(for post: PostStruct) {
         self.CellTitle.text = "\(post.title)"
                 
         if post.image.contains(".jpg") {

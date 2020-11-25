@@ -1,17 +1,17 @@
 import Foundation
 
-struct RedditPost: Decodable {
+struct RedditPost: Codable {
     var data: DataStruct
         
-    struct DataStruct: Decodable {
+    struct DataStruct: Codable {
         var children: [ItemStruct]
         var after: String?
         var before: String?
         
-        struct ItemStruct: Decodable {
+        struct ItemStruct: Codable {
             var data: ItemDataStruct
         
-            struct ItemDataStruct: Decodable {
+            struct ItemDataStruct: Codable {
                 var author: String
                 var domain: String
                 var created_utc: Double
@@ -41,28 +41,47 @@ struct RedditPost: Decodable {
 //    }
 //}
 
-struct AllPosts: Decodable {
+//struct AllPosts: Decodable {
+//    var postList: [FullPost]
+//
+//    struct FullPost: Decodable {
+//        var dataPost: PostStruct
+//
+//        struct PostStruct: Decodable {
+//            var username: String
+//            var time: String
+//            var domain: String
+//            var title: String
+//            var rating: String
+//            var comments: String
+//            var image: String
+//            var isChecked: String
+//        }
+//    }
+//}
+
+struct AllPosts: Codable {
     var postList: [FullPost]
+}
 
-    struct FullPost: Decodable {
-        var dataPost: PostStruct
+struct FullPost: Codable {
+    var dataPost: [PostStruct]
+}
 
-        struct PostStruct: Decodable {
-            var username: String
-            var time: String
-            var domain: String
-            var title: String
-            var rating: String
-            var comments: String
-            var image: String
-            var isChecked: String
-        }
-    }
+struct PostStruct: Codable {
+    var username: String
+    var time: String
+    var domain: String
+    var title: String
+    var rating: String
+    var comments: String
+    var image: String
+    var isChecked: String
 }
   
 
-struct PreviewPost: Decodable {
-    var title: String
-    var image: String
-//    var isChecked: String
-}
+//struct PreviewPost: Decodable {
+//    var title: String
+//    var image: String
+////    var isChecked: String
+//}
